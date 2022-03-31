@@ -6,8 +6,8 @@ Requires=network.target
 [Service]
 Type=simple
 Restart=always
-ExecStart=/usr/local/bin/init_redis_server.sh
-ExecStop=pkill -ef "/bin/bash /usr/local/bin/init_redis_server.sh"
+ExecStart=/bin/bash /usr/local/bin/init_redis_server.sh
+ExecStop=pkill -ef "/usr/local/bin/init_redis_server.sh"
 StartLimitIntervalSec=0
 
 [Install]

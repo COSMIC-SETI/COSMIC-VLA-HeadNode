@@ -1,7 +1,10 @@
-
 #!/bin/bash
+source /home/cosmic/anaconda3/bin/activate /home/cosmic/anaconda3/envs/cosmic_vla
+
 workdir="/home/cosmic/dev/logs"
 logstem="${workdir}/redis_server"
+
+export PYTHONUBUFFERED=yes
 
 echo "Starting redis_server"
 
